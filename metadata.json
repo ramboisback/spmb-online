@@ -1,0 +1,6 @@
+{
+  "name": "SPMB Online",
+  "description": "Sistem Penerimaan Peserta Didik & Mahasiswa Baru (SPMB) Online Berbasis Web terintegrasi dengan validasi NISN, geokoding zonasi peta, pembobotan prestasi, sistem seleksi cascading, dan dashboard operator.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

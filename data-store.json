@@ -1,0 +1,334 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "password": "2024729575",
+      "role": "Admin Dinas",
+      "createdAt": "2026-05-28T05:57:00.367Z"
+    },
+    {
+      "id": "usr_op1",
+      "email": "operator1@spmb.go.id",
+      "password": "62886652",
+      "role": "Operator",
+      "schoolId": 1,
+      "createdAt": "2026-05-28T05:57:00.368Z"
+    },
+    {
+      "id": "usr_op2",
+      "email": "operator2@spmb.go.id",
+      "password": "62886652",
+      "role": "Operator",
+      "schoolId": 2,
+      "createdAt": "2026-05-28T05:57:00.368Z"
+    },
+    {
+      "id": "usr_op3",
+      "email": "operator3@spmb.go.id",
+      "password": "62886652",
+      "role": "Operator",
+      "schoolId": 3,
+      "createdAt": "2026-05-28T05:57:00.368Z"
+    },
+    {
+      "id": "usr_op4",
+      "email": "operator4@spmb.go.id",
+      "password": "62886652",
+      "role": "Operator",
+      "schoolId": 4,
+      "createdAt": "2026-05-28T05:57:00.368Z"
+    },
+    {
+      "id": "usr_student",
+      "email": "siswa@gmail.com",
+      "password": "1098294527",
+      "role": "Siswa",
+      "createdAt": "2026-05-28T05:57:00.368Z"
+    }
+  ],
+  "schools": [
+    {
+      "id": 1,
+      "name": "SDN Menteng 01 Jakarta",
+      "address": "Jl. Besuki No.4, Menteng, Jakarta Pusat",
+      "latitude": -6.198305,
+      "longitude": 106.832943,
+      "quotas": {
+        "Zonasi": 5,
+        "Prestasi": 4,
+        "Afirmasi": 3,
+        "Pindahan": 2,
+        "Tes": 3
+      },
+      "totalQuotas": 17
+    },
+    {
+      "id": 2,
+      "name": "SMP Negeri 115 Jakarta",
+      "address": "Jl. KH. Abdullah Syafei No.1, Tebet, Jakarta Selatan",
+      "latitude": -6.223842,
+      "longitude": 106.852445,
+      "quotas": {
+        "Zonasi": 4,
+        "Prestasi": 3,
+        "Afirmasi": 2,
+        "Pindahan": 1,
+        "Tes": 2
+      },
+      "totalQuotas": 12
+    },
+    {
+      "id": 3,
+      "name": "SDN Kebon Jeruk 11 Jakarta",
+      "address": "Jl. Raya Kebon Jeruk No.1, Kebon Jeruk, Jakarta Barat",
+      "latitude": -6.192389,
+      "longitude": 106.771239,
+      "quotas": {
+        "Zonasi": 3,
+        "Prestasi": 3,
+        "Afirmasi": 2,
+        "Pindahan": 1,
+        "Tes": 2
+      },
+      "totalQuotas": 11
+    },
+    {
+      "id": 4,
+      "name": "SMP Negeri 1 Jakarta",
+      "address": "Jl. Cikini Raya No.87, Menteng, Jakarta Pusat",
+      "latitude": -6.189567,
+      "longitude": 106.839841,
+      "quotas": {
+        "Zonasi": 5,
+        "Prestasi": 5,
+        "Afirmasi": 3,
+        "Pindahan": 2,
+        "Tes": 4
+      },
+      "totalQuotas": 19
+    }
+  ],
+  "registrations": [
+    {
+      "id": "reg_1779948871232_gxy3c",
+      "userId": "usr_student",
+      "nisn": "",
+      "nama": "",
+      "email": "",
+      "nik": "",
+      "phone": "",
+      "address": "",
+      "latitude": -6.158541,
+      "longitude": 106.834015,
+      "pilihan1Id": 1,
+      "pilihan2Id": 2,
+      "pathway": "Zonasi",
+      "status": "Draft",
+      "isManualFallback": false,
+      "documents": {},
+      "createdAt": "2026-05-28T06:14:31.232Z",
+      "updatedAt": "2026-05-28T06:14:31.232Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log_1779948964454_5e5sj",
+      "userId": "system",
+      "email": "op1@spmb.go.id",
+      "role": "Siswa",
+      "action": "BRUTE_FORCE_LOCKOUT_TRIGGERED",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{}",
+      "payloadAfter": "{\"count\":5,\"lockedUntil\":\"2026-05-28T06:31:04.453Z\"}",
+      "createdAt": "2026-05-28T06:16:04.454Z"
+    },
+    {
+      "id": "log_1779948871232_ysuu6",
+      "userId": "usr_student",
+      "email": "siswa@gmail.com",
+      "role": "Siswa",
+      "action": "SAVE_DRAFT_REGISTRATION",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{}",
+      "payloadAfter": "{\"id\":\"reg_1779948871232_gxy3c\",\"userId\":\"usr_student\",\"nisn\":\"\",\"nama\":\"\",\"email\":\"\",\"nik\":\"\",\"phone\":\"\",\"address\":\"\",\"latitude\":-6.158541,\"longitude\":106.834015,\"pilihan1Id\":1,\"pilihan2Id\":2,\"pathway\":\"Zonasi\",\"status\":\"Draft\",\"isManualFallback\":false,\"documents\":{},\"createdAt\":\"2026-05-28T06:14:31.232Z\",\"updatedAt\":\"2026-05-28T06:14:31.232Z\"}",
+      "createdAt": "2026-05-28T06:14:31.232Z"
+    },
+    {
+      "id": "log_1779948824148_s0vks",
+      "userId": "usr_student",
+      "email": "siswa@gmail.com",
+      "role": "Siswa",
+      "action": "LOGIN_SUCCESS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{}",
+      "payloadAfter": "{}",
+      "createdAt": "2026-05-28T06:13:44.148Z"
+    },
+    {
+      "id": "log_1779948747077_clpoq",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "EXECUTE_SELECTION_CASCADING_BATCH",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "[]",
+      "payloadAfter": "[]",
+      "createdAt": "2026-05-28T06:12:27.077Z"
+    },
+    {
+      "id": "log_1779948746262_r68aj",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "UPDATE_SYSTEM_SETTINGS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{\"phase\":\"Seleksi & Verifikasi\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "payloadAfter": "{\"phase\":\"Pengumuman\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "createdAt": "2026-05-28T06:12:26.262Z"
+    },
+    {
+      "id": "log_1779948745206_7nvu8",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "UPDATE_SYSTEM_SETTINGS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "payloadAfter": "{\"phase\":\"Seleksi & Verifikasi\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "createdAt": "2026-05-28T06:12:25.206Z"
+    },
+    {
+      "id": "log_1779948743982_thyu0",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "UPDATE_SYSTEM_SETTINGS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "payloadAfter": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "createdAt": "2026-05-28T06:12:23.982Z"
+    },
+    {
+      "id": "log_1779948724660_5qojo",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "UPDATE_SYSTEM_SETTINGS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "payloadAfter": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "createdAt": "2026-05-28T06:12:04.660Z"
+    },
+    {
+      "id": "log_1779948724478_ffqty",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "UPDATE_SYSTEM_SETTINGS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "payloadAfter": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "createdAt": "2026-05-28T06:12:04.478Z"
+    },
+    {
+      "id": "log_1779948724300_kv8ye",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "UPDATE_SYSTEM_SETTINGS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "payloadAfter": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "createdAt": "2026-05-28T06:12:04.300Z"
+    },
+    {
+      "id": "log_1779948722700_0z31p",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "UPDATE_SYSTEM_SETTINGS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{\"phase\":\"Pengumuman\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "payloadAfter": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "createdAt": "2026-05-28T06:12:02.700Z"
+    },
+    {
+      "id": "log_1779948701757_w9xm1",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "EXECUTE_SELECTION_CASCADING_BATCH",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "[]",
+      "payloadAfter": "[]",
+      "createdAt": "2026-05-28T06:11:41.757Z"
+    },
+    {
+      "id": "log_1779948698704_ypcms",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "UPDATE_SYSTEM_SETTINGS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{\"phase\":\"Seleksi & Verifikasi\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "payloadAfter": "{\"phase\":\"Pengumuman\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "createdAt": "2026-05-28T06:11:38.704Z"
+    },
+    {
+      "id": "log_1779948696025_004s3",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "UPDATE_SYSTEM_SETTINGS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{\"phase\":\"Pendaftaran\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "payloadAfter": "{\"phase\":\"Seleksi & Verifikasi\",\"canRegister\":true,\"lockoutAttempts\":5,\"lockoutTime\":15}",
+      "createdAt": "2026-05-28T06:11:36.025Z"
+    },
+    {
+      "id": "log_1779948689118_5n5jr",
+      "userId": "usr_admin",
+      "email": "admin@spmb.go.id",
+      "role": "Admin Dinas",
+      "action": "LOGIN_SUCCESS",
+      "ip": "2404:8000:1037:21f1:b169:ed46:2be1:7782, 169.254.169.126",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "payloadBefore": "{}",
+      "payloadAfter": "{}",
+      "createdAt": "2026-05-28T06:11:29.118Z"
+    }
+  ],
+  "settings": {
+    "phase": "Pengumuman",
+    "canRegister": true,
+    "lockoutAttempts": 5,
+    "lockoutTime": 15
+  },
+  "otps": {},
+  "loginAttempts": {
+    "op1@spmb.go.id": {
+      "count": 5,
+      "lockedUntil": "2026-05-28T06:31:04.453Z"
+    },
+    "op2@spmb.go.id": {
+      "count": 3,
+      "lockedUntil": ""
+    }
+  },
+  "simulatedNisnFailure": false
+}
